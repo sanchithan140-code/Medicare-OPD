@@ -1,0 +1,1 @@
+@props(['title'=>'No records found','message'=>'There is nothing to display yet.'])<div class="empty-state"><span>○</span><h3>{{ $title }}</h3><p>{{ $message }}</p></div>

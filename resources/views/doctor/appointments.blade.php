@@ -1,0 +1,10 @@
+@extends('layouts.app') @section('page-title','My Appointments') @section('content')<section class="panel">
+    <h2>Appointments by date &amp; time</h2>
+    <p class="muted">Newest appointments first. Click a date, patient name or Patient details to view their medical record.</p>
+    <form method="get" action="{{ route('doctor.appointments') }}" class="filter-bar">
+        <label>Appointment date<input type="date" name="date" value="{{ request('date') }}"></label>
+        <label>Patient ID<input type="text" name="patient_id" value="{{ request('patient_id') }}" maxlength="50" placeholder="e.g. 0321"></label>
+        <button class="btn btn-primary" type="submit">Show appointments</button>
+        <a class="btn btn-secondary" href="{{ route('doctor.appointments') }}">Clear filters</a>
+    </form>
+</section><div class="table-card"><div class="table-scroll"><table><thead><tr><th>Date & time</th><th>Patient</th><th>ID</th><th>Status</th><th>Clinical record</th></tr></thead><tbody>@forelse($appointments as $a)<tr><td><a href="{{ route('doctor.history',$a->patient_id) }}">{{ $a->slot?->slot_start?->format('d M Y h:i A') }}</a></td><td><a href="{{ route('doctor.history',$a->patient_id) }}">{{ $a->patient->full_name }}</a></td><td>{{ $a->patient->patient_code }}</td><td><x-status :value="$a->status"/></td><td><div class="action-group"><a class="btn btn-secondary btn-sm" href="{{ route('doctor.history',$a->patient_id) }}">Patient details</a>@if(in_array($a->status,['CONFIRMED','CHECKED_IN']) && !$a->isWithinConsultationDate())<span class="muted">Consultation unavailable: appointment date passed or missing</span>@elseif(in_array($a->status,['CONFIRMED','CHECKED_IN']))<a class="btn btn-primary btn-sm" href="{{ route('doctor.consultation',$a) }}">Consult</a>@elseif($a->consultation)<span class="muted">Completed — use History</span>@elseif($a->status==='BOOKED')<span class="muted">Awaiting confirmation</span>@endif</div></td></tr>@empty<tr><td colspan="5">No appointments assigned.</td></tr>@endforelse</tbody></table></div></div>{{ $appointments->links() }}@endsection

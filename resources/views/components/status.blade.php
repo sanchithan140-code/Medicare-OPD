@@ -1,0 +1,1 @@
+@props(['value']) @php($v=strtoupper((string)$value))<span class="status status-{{ strtolower(str_replace('_','-',$v)) }}">{{ str_replace('_',' ',$v) }}</span>
