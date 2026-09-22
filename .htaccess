@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /medicare/
+    RewriteRule ^public(?:/|$) - [L]
+    # Use the public directory as the canonical URL in XAMPP subdirectory installs.
+    # A temporary 307 preserves form POST methods and bodies.
+    RewriteRule ^(.*)$ public/$1 [R=307,L]
+</IfModule>
