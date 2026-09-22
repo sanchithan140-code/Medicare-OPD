@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="t d">
+<title id="t">MEDICARE logo</title><desc id="d">Blue medical shield with pulse and cross.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#075fcf"/><stop offset="1" stop-color="#0a8b8a"/></linearGradient><filter id="s" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#09335d" flood-opacity=".18"/></filter></defs>
+<rect x="16" y="16" width="148" height="148" rx="42" fill="url(#g)" filter="url(#s)"/>
+<path d="M90 43c24 15 42 16 42 16v33c0 28-17 44-42 55-25-11-42-27-42-55V59s18-1 42-16Z" fill="#fff" opacity=".98"/>
+<path d="M58 94h18l8-20 13 41 9-21h17" fill="none" stroke="#0a6fd2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M113 50v22M102 61h22" stroke="#e7404b" stroke-width="8" stroke-linecap="round"/>
+</svg>

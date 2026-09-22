@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="t d">
+<title id="t">Modern hospital appointment illustration</title><desc id="d">A modern hospital building, doctor, patient, appointment card and medical symbols.</desc>
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf5ff"/><stop offset="1" stop-color="#dff8f1"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b5dcc"/><stop offset="1" stop-color="#0d7a83"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9efff"/><stop offset="1" stop-color="#8fc7ef"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#163d6b" flood-opacity=".18"/></filter>
+</defs>
+<rect width="900" height="680" rx="54" fill="url(#sky)"/>
+<circle cx="748" cy="115" r="76" fill="#bceade" opacity=".75"/><circle cx="113" cy="165" r="55" fill="#cce8ff" opacity=".8"/>
+<g opacity=".45" fill="none" stroke="#68a8d8" stroke-width="3"><path d="M50 98h100M100 48v100"/><path d="M780 255h70M815 220v70"/></g>
+<g transform="translate(135 112)" filter="url(#shadow)">
+ <rect x="0" y="100" width="486" height="330" rx="28" fill="#fff"/>
+ <rect x="45" y="36" width="397" height="124" rx="24" fill="url(#blue)"/>
+ <rect x="83" y="196" width="96" height="154" rx="10" fill="url(#glass)"/><rect x="197" y="196" width="96" height="154" rx="10" fill="url(#glass)"/><rect x="307" y="196" width="96" height="154" rx="10" fill="url(#glass)"/>
+ <rect x="196" y="330" width="98" height="100" rx="10" fill="#0b5dcc"/><path d="M245 330v100" stroke="#d7eeff" stroke-width="4"/>
+ <circle cx="92" cy="98" r="33" fill="#fff"/><path d="M92 78v40M72 98h40" stroke="#e7404b" stroke-width="11" stroke-linecap="round"/>
+ <text x="140" y="90" font-family="Arial, sans-serif" font-size="31" font-weight="800" fill="#fff">MEDILAND</text><text x="140" y="121" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#cfe7ff">HOSPITAL OPD</text>
+ <rect x="-28" y="425" width="545" height="24" rx="12" fill="#bdd8e8"/>
+</g>
+<g transform="translate(545 290)" filter="url(#shadow)">
+ <rect x="0" y="0" width="280" height="246" rx="28" fill="#fff"/>
+ <rect x="0" y="0" width="280" height="67" rx="28" fill="url(#blue)"/><rect x="0" y="42" width="280" height="25" fill="url(#blue)"/>
+ <circle cx="37" cy="33" r="9" fill="#6be0bd"/><text x="58" y="42" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#fff">Appointment confirmed</text>
+ <circle cx="53" cy="111" r="29" fill="#e4f2ff"/><path d="M53 95v32M37 111h32" stroke="#0b5dcc" stroke-width="7" stroke-linecap="round"/>
+ <text x="97" y="104" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#123456">Dr. A. Rahman</text><text x="97" y="128" font-family="Arial, sans-serif" font-size="14" fill="#66788c">General Medicine</text>
+ <rect x="28" y="159" width="224" height="1.5" fill="#e5eaf1"/><text x="31" y="190" font-family="Arial, sans-serif" font-size="14" fill="#66788c">MON, 10 AUG</text><text x="31" y="216" font-family="Arial, sans-serif" font-size="21" font-weight="800" fill="#0b5dcc">10:30 AM</text><rect x="171" y="178" width="82" height="43" rx="13" fill="#eaf8f1"/><text x="189" y="205" font-family="Arial, sans-serif" font-size="14" font-weight="800" fill="#0d8a62">BOOKED</text>
+</g>
+<g transform="translate(70 405)">
+ <circle cx="78" cy="78" r="70" fill="#0b5dcc" opacity=".12"/>
+ <circle cx="80" cy="57" r="28" fill="#efc4a8"/><path d="M51 53c1-37 57-41 61 0-10-8-18-11-31-11-12 0-21 3-30 11Z" fill="#16324f"/>
+ <path d="M39 145c5-43 23-66 42-66s37 23 42 66" fill="#fff" stroke="#0b5dcc" stroke-width="7"/><path d="M62 88v35M100 88v35" stroke="#0b5dcc" stroke-width="6"/><circle cx="81" cy="115" r="17" fill="none" stroke="#0d7a83" stroke-width="5"/>
+</g>
+<g transform="translate(250 485)"><circle cx="55" cy="54" r="51" fill="#0d7a83" opacity=".12"/><circle cx="56" cy="39" r="20" fill="#dca784"/><path d="M35 38c2-29 42-29 43 0-8-6-15-8-22-8s-14 2-21 8Z" fill="#3a2a25"/><path d="M20 105c4-32 18-49 36-49s31 17 36 49" fill="#f7b956"/></g>
+</svg>
