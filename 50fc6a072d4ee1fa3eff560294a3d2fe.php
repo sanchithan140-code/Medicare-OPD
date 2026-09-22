@@ -1,0 +1,6 @@
+<?php $__env->startSection('title','Forgot Password — MEDICARE'); ?>
+<?php $__env->startSection('content'); ?>
+<section class="simple-auth"><form class="auth-card" method="post" action="<?php echo e(route('password.email')); ?>"><?php echo csrf_field(); ?><div class="otp-icon">⌁</div><span class="eyebrow">ACCOUNT RECOVERY</span><h2>Reset your password</h2><p class="muted">Let’s help you return to your healthcare journey. Enter your email address and we’ll send you a secure verification code.</p><?php if($errors->any()): ?><div class="alert alert-error"><?php echo e($errors->first()); ?></div><?php endif; ?><label>Email address<input type="email" name="email" value="<?php echo e(old('email')); ?>" maxlength="190" autocomplete="email" required></label><button class="btn btn-primary btn-block">Send reset OTP</button><a class="text-link" href="<?php echo e(route('login')); ?>">Back to login</a></form></section>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.public', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\xampp\htdocs\medicare\resources\views\auth\forgot.blade.php ENDPATH**/ ?>
